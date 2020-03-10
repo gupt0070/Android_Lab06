@@ -9,8 +9,6 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.android_lab06.ProfileActivity;
-
 public class MainActivity extends AppCompatActivity {
 
     EditText emailField;
