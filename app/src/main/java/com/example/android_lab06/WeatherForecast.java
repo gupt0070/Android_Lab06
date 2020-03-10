@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.androidlabs.R;
+
 import org.json.JSONObject;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
@@ -28,7 +30,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class WeatherForcast extends AppCompatActivity {
+public class WeatherForecast extends AppCompatActivity {
 
     private ProgressBar progressBar;
     private TextView currentTemp, minTemp, maxTemp, uvRating;
