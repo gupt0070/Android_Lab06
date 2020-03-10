@@ -9,9 +9,6 @@ import android.widget.ListView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.androidlabs.R;
-
 import java.util.ArrayList;
 import java.util.List;
 

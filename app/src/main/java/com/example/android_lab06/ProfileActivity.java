@@ -11,9 +11,6 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.android_lab06.ChatRoomActivity;
-import com.example.androidlabs.R;
-
 public class ProfileActivity extends AppCompatActivity {
 
     static final int REQUEST_IMAGE_CAPTURE = 1;
@@ -62,7 +59,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         goToWeatherBtn = findViewById(R.id.GoToWeatherPage);
         goToWeatherBtn.setOnClickListener(c -> {
-            Intent goToMenuPage = new Intent(ProfileActivity.this, WeatherForcast.class);
+            Intent goToMenuPage = new Intent(ProfileActivity.this, WeatherForecast.class);
 
             startActivityForResult(goToMenuPage, 234);
 
@@ -108,3 +105,4 @@ public class ProfileActivity extends AppCompatActivity {
         super.onDestroy();
         Log.d(ACTIVITY_NAME, "In function: onDestroy()");
     }
+}

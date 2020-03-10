@@ -28,7 +28,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class WeatherForcast extends AppCompatActivity {
+public class WeatherForecast extends AppCompatActivity {
 
     private ProgressBar progressBar;
     private TextView currentTemp, minTemp, maxTemp, uvRating;
