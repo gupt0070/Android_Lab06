@@ -38,6 +38,9 @@
         android:text="@string/EmailTextViewText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginRight="-4dp"
         android:layout_below="@id/NameEditText"/>
     <EditText
         android:id="@+id/EmailEditText"
@@ -64,6 +67,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="-1dp"
         android:src="@android:drawable/picture_frame"
         android:layout_below="@id/PictureTextView"/>
     <TextView
@@ -81,6 +87,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="0dp"
         android:text="@string/GoToChatText"
         android:layout_below="@id/ImagePictureTextView"/>
 
@@ -90,6 +99,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
+        android:layout_marginLeft="-8dp"
+        android:layout_marginTop="-265dp"
+        android:layout_marginRight="8dp"
         android:text="@string/GoToWeather"
         android:layout_below="@id/GoToChatBtn"/>
 
