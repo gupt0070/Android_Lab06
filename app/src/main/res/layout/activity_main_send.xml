@@ -24,14 +24,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="4dp"
-        android:text="Aaman"
+        android:text="HI"
         android:textColor="@color/colorPrimary"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textViewMessage"
         android:layout_below="@+id/receiverName"
-        android:layout_alignRight="@+id/receiverName"
+        android:layout_alignEnd="@+id/receiverName"
         android:background="@drawable/receive_message"
         android:paddingVertical="12dp"
         android:paddingHorizontal="16dp"

@@ -1,39 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    tools:context=".ChatRoomActivity"
+    android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
 
     <ListView
-        android:id="@+id/ListView"
-        android:stackFromBottom="true"
-        android:transcriptMode="alwaysScroll"
-        android:dividerHeight="0dp"
-        android:divider="@android:color/transparent"
-        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/SendBtn"/>
+        android:layout_width="match_parent"
+        android:id="@+id/listView"> </ListView>
+
     <Button
-        android:id="@+id/SendBtn"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:text="@string/SendText"/>
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonSend"
+        android:text="@string/send"
+        android:layout_alignParentEnd="@+id/msgBox"
+        android:layout_alignParentBottom="true"/>
+
     <EditText
-        android:id="@+id/ChatEditText"
-        android:layout_width="wrap_content"
+        android:id="@+id/msgBox"
         android:layout_height="wrap_content"
+        android:layout_width="match_parent"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@id/SendBtn"
-        android:layout_toLeftOf="@id/ReceiveBtn"
-        android:hint="@string/ChatHint"/>
+        android:hint="@string/typeHere"
+        android:layout_toEndOf="@+id/buttonSend"
+        android:layout_toStartOf="@+id/buttonReceive"/>
+
     <Button
-        android:id="@+id/ReceiveBtn"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:text="@string/ReceiveText"/>
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonReceive"
+        android:text="@string/receive"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
 </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
