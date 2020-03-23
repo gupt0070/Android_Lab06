@@ -207,13 +207,13 @@ public class ChatRoomActivity extends AppCompatActivity {
             }
 
             if (messageList.get(i).getAction() == true) {
-                newView = getLayoutInflater().inflate(R.layout.left_layout, parent, false);
-                TextView msgArea = newView.findViewById(R.id.msgLeft);
+                newView = getLayoutInflater().inflate(R.layout.right_layout, parent, false);
+                TextView msgArea = newView.findViewById(R.id.msgRight);
                 msgArea.setText(messageList.get(i).getMessage());
 
             } else if (messageList.get(i).getAction() == false) {
-                newView = getLayoutInflater().inflate(R.layout.right_layout, parent, false);
-                TextView msgArea = newView.findViewById(R.id.msgRight);
+                newView = getLayoutInflater().inflate(R.layout.left_layout, parent, false);
+                TextView msgArea = newView.findViewById(R.id.msgLeft);
                 msgArea.setText(messageList.get(i).getMessage());
             }
             //}
