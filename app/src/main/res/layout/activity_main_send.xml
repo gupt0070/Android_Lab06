@@ -24,19 +24,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="4dp"
-        android:text="HI"
         android:textColor="@color/colorPrimary"/>
+
     <TextView
+        android:id="@+id/textViewMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewMessage"
         android:layout_below="@+id/receiverName"
         android:layout_alignEnd="@+id/receiverName"
+        android:layout_marginTop="-22dp"
+        android:layout_marginEnd="1dp"
         android:background="@drawable/receive_message"
-        android:paddingVertical="12dp"
-        android:paddingHorizontal="16dp"
         android:elevation="2dp"
-        android:textSize="18dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
         android:text="How are you doing? This is a long message that should probably wrap."
-        />
+        android:textSize="18dp" />
 </RelativeLayout>
