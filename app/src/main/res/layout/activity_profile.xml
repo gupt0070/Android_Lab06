@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -7,92 +6,101 @@
         android:id="@+id/ProfileTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ProfileText"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/ProfileText" />
 
     <TextView
         android:id="@+id/NameTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/NameText"
+        android:layout_below="@id/ProfileTextView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/ProfileTextView"/>
+        android:text="@string/NameText" />
+
     <EditText
         android:id="@+id/NameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/NameHintText"
+        android:layout_below="@id/NameTextView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/NameTextView"
-        />
+        android:ems="10"
+        android:hint="@string/NameHintText" />
 
     <TextView
         android:id="@+id/EmailTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/EmailTextViewText"
+        android:layout_below="@id/NameEditText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/NameEditText"/>
+        android:text="@string/EmailTextViewText" />
+
     <EditText
-        android:id="@+id/EmailEditText"
+        android:id="@+id/Email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/EmailHintText"
+        android:layout_below="@id/EmailTextView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/EmailTextView"
-        />
+        android:ems="10"
+        android:hint="@string/EmailHintText" />
+
     <TextView
         android:id="@+id/PictureTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/PictureTextView"
+        android:layout_below="@id/Email"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/EmailEditText"/>
+        android:text="@string/PictureTextView" />
 
     <ImageButton
-        android:id="@+id/ImageButton"
+        android:id="@+id/Image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/PictureTextView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:src="@android:drawable/picture_frame"
-        android:layout_below="@id/PictureTextView"/>
+        android:src="@android:drawable/picture_frame" />
+
     <TextView
-        android:id="@+id/ImagePictureTextView"
+        android:id="@+id/ImagePicture"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ImagePictureTextView"
+        android:layout_below="@id/Image"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/ImageButton"/>
+        android:text="@string/ImagePictureTextView" />
 
     <Button
-        android:id="@+id/GoToChatBtn"
+        android:id="@+id/ChatButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/ImagePicture"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:text="@string/GoToChatText"
-        android:layout_below="@id/ImagePictureTextView"/>
+        android:text="@string/GoToChatText" />
 
     <Button
-        android:id="@+id/GoToWeatherPage"
+        android:id="@+id/WeatherPage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/ChatButton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:text="@string/GoToWeather"
-        android:layout_below="@id/GoToChatBtn"/>
+        android:text="@string/GoToWeather" />
 
-
+    <Button
+        android:id="@+id/ToolbarPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/WeatherPage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/GoToToolbar" />
 
 </RelativeLayout>
